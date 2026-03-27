@@ -29,7 +29,7 @@ cd ~/.claude/skills/<skill-name> && git pull
 
 | Skill | Description | Methods | Install |
 |-------|-------------|---------|---------|
-| [**Apple Health Deep Analysis**](https://github.com/labrinyang/apple-health-analysis) | Mayo Clinic-grade health data analysis for Apple Health exports. 20 peer-reviewed statistical methods, 35+ SVG visualizations, clinical-quality HTML reports. | Granger Causality, Transfer Entropy, CCM, Sample Entropy, DFA, LBGI/HBGI, Cosinor, Bayesian Change Points, Biological Age | `git clone https://github.com/labrinyang/apple-health-analysis ~/.claude/skills/apple-health-analysis` |
+| [**Apple Health Deep Analysis**](https://github.com/labrinyang/apple-health-analysis) | Clinical-grade health data analysis for Apple Health exports. 20 peer-reviewed statistical methods, 35+ SVG visualizations, clinical-quality HTML reports. | Granger Causality, Transfer Entropy, CCM, Sample Entropy, DFA, LBGI/HBGI, Cosinor, Bayesian Change Points, Biological Age | `git clone https://github.com/labrinyang/apple-health-analysis ~/.claude/skills/apple-health-analysis` |
 
 ---
 
