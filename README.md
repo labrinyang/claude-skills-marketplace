@@ -6,21 +6,19 @@ Skills extend Claude Code with specialized capabilities — domain expertise, an
 
 ## Install a Skill
 
-```bash
-# Step 1: Add the marketplace (one-time)
-claude plugins marketplace add <github-user>/<repo-name>
+### Via skills.sh (recommended — multi-agent)
 
-# Step 2: Install the plugin
-claude plugins install <plugin-name>
+```bash
+npx skills add <github-user>/<repo-name>
 ```
 
-Restart Claude Code after installing. Skills trigger automatically based on context.
+Works with: Claude Code, Cursor, GitHub Copilot, Codex, Gemini CLI, OpenCode, Cline, and more.
 
-### Update
+### Via Claude Code Plugin CLI
 
 ```bash
-claude plugins marketplace update <marketplace-name>
-claude plugins update <plugin-name>
+claude plugins marketplace add <github-user>/<repo-name>
+claude plugins install <plugin-name>
 ```
 
 ## Available Skills
@@ -29,7 +27,7 @@ claude plugins update <plugin-name>
 
 | Skill | Description | Methods | Install |
 |-------|-------------|---------|---------|
-| [**Apple Health Deep Analysis**](https://github.com/labrinyang/apple-health-analysis) | Clinical-grade health data analysis for Apple Health exports. 20 peer-reviewed statistical methods, 35+ SVG visualizations, clinical-quality HTML reports. | Granger Causality, Transfer Entropy, CCM, Sample Entropy, DFA, LBGI/HBGI, Cosinor, Bayesian Change Points, Biological Age | `claude plugins marketplace add labrinyang/apple-health-analysis && claude plugins install apple-health-analysis` |
+| [**Apple Health Deep Analysis**](https://github.com/labrinyang/apple-health-analysis) | Clinical-grade health data analysis for Apple Health exports. 20 peer-reviewed statistical methods, 35+ SVG visualizations, clinical-quality HTML reports. | Granger Causality, Transfer Entropy, CCM, Sample Entropy, DFA, LBGI/HBGI, Cosinor, Bayesian Change Points, Biological Age | `npx skills add labrinyang/apple-health-analysis` |
 
 ---
 
