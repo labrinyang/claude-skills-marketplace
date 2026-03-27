@@ -7,20 +7,20 @@ Skills extend Claude Code with specialized capabilities — domain expertise, an
 ## Install a Skill
 
 ```bash
-# Clone directly into Claude Code's skills directory
-git clone <github-url> ~/.claude/skills/<skill-name>
+# Step 1: Add the marketplace (one-time)
+claude plugins marketplace add <github-user>/<repo-name>
 
-# Or clone anywhere and symlink
-git clone <github-url> ~/my-skills/<skill-name>
-ln -sf ~/my-skills/<skill-name> ~/.claude/skills/<skill-name>
+# Step 2: Install the plugin
+claude plugins install <plugin-name>
 ```
 
-Restart Claude Code after installing. The skill will appear in the available skills list and trigger automatically based on context.
+Restart Claude Code after installing. Skills trigger automatically based on context.
 
-### Update a Skill
+### Update
 
 ```bash
-cd ~/.claude/skills/<skill-name> && git pull
+claude plugins marketplace update <marketplace-name>
+claude plugins update <plugin-name>
 ```
 
 ## Available Skills
@@ -29,7 +29,7 @@ cd ~/.claude/skills/<skill-name> && git pull
 
 | Skill | Description | Methods | Install |
 |-------|-------------|---------|---------|
-| [**Apple Health Deep Analysis**](https://github.com/labrinyang/apple-health-analysis) | Clinical-grade health data analysis for Apple Health exports. 20 peer-reviewed statistical methods, 35+ SVG visualizations, clinical-quality HTML reports. | Granger Causality, Transfer Entropy, CCM, Sample Entropy, DFA, LBGI/HBGI, Cosinor, Bayesian Change Points, Biological Age | `git clone https://github.com/labrinyang/apple-health-analysis ~/.claude/skills/apple-health-analysis` |
+| [**Apple Health Deep Analysis**](https://github.com/labrinyang/apple-health-analysis) | Clinical-grade health data analysis for Apple Health exports. 20 peer-reviewed statistical methods, 35+ SVG visualizations, clinical-quality HTML reports. | Granger Causality, Transfer Entropy, CCM, Sample Entropy, DFA, LBGI/HBGI, Cosinor, Bayesian Change Points, Biological Age | `claude plugins marketplace add labrinyang/apple-health-analysis && claude plugins install apple-health-analysis` |
 
 ---
 
